@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
         var xhr = new XMLHttpRequest();
         xhr.open("GET", url, true);
 
+
+        //Taking the information from Html files using onload function.
         xhr.onload = function () {
             if (xhr.status >= 200 && xhr.status < 300) {
                 // Animate the content div to display the new content
@@ -19,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         };
 
+        //If there is any errors onerror function will catch and display the message
         xhr.onerror = function () {
             var contentDiv = document.getElementById("content");
             contentDiv.innerHTML = "Error loading content.";
