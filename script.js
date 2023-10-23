@@ -2,9 +2,7 @@
     Assignment 05
 */
 $(document).ready(function () {
-
     class ContentItem {
-        // properties
         constructor(IdNumber, name, description, category) {
             this.IdNumber = IdNumber;
             this.name = name;
@@ -12,9 +10,7 @@ $(document).ready(function () {
             this.category = category;
         }
 
-        // methods
         updateContentItem(IdNumber, name, description, category) {
-            // update the content item
             if (this.IdNumber === IdNumber && name !== null && description !== null && category !== null) {
                 this.name = name;
                 this.description = description;
@@ -22,7 +18,6 @@ $(document).ready(function () {
             }
         }
 
-        // toString
         toString() {
             return `
               <div class="content-item-wrapper" id="content-item-${this.IdNumber}">
@@ -34,7 +29,6 @@ $(document).ready(function () {
         }
     }
 
-    // List of content
     let contentItems = [
         new ContentItem(0, "To Kill a Mockingbird", "A classic novel by Harper Lee.", "Fiction"),
         new ContentItem(1, "1984", "George Orwell's dystopian masterpiece.", "Science Fiction"),
@@ -48,7 +42,6 @@ $(document).ready(function () {
     contentItems.forEach((item) => {
         let $contentItem = $(item.toString());
 
-        // Style the content item
         $contentItem.css({
             border: "2px solid #333",
             width: "300px",
@@ -56,14 +49,12 @@ $(document).ready(function () {
             margin: "20px auto",
         });
 
-        // Add the content item to the list
         $contentItemList.append($contentItem);
     });
 
-    // Update the theme name in the HTML
     $("#theme-name").text("Famous Books");
 
-    // BONUS Add buttons
+    // Add buttons
     let $successfulUpdateButton = $("<button>Successful Update</button>");
     let $unsuccessfulUpdateButton = $("<button>Unsuccessful Update</button>");
 
@@ -71,7 +62,7 @@ $(document).ready(function () {
         // Attempt to update successfully
         contentItems[0].updateContentItem(0, "New Name", "New Description", "New Category");
         // Update the displayed content item
-        $contentItemList.html(""); // Clear the list
+        $contentItemList.empty(); // Clear the list
         contentItems.forEach((item) => {
             let $contentItem = $(item.toString());
             $contentItem.css({
@@ -88,7 +79,7 @@ $(document).ready(function () {
         // Attempt to update unsuccessfully
         contentItems[0].updateContentItem(1, "New Name", "New Description", "New Category");
         // Update the displayed content item
-        $contentItemList.html(""); // Clear the list
+        $contentItemList.empty(); // Clear the list
         contentItems.forEach((item) => {
             let $contentItem = $(item.toString());
             $contentItem.css({
@@ -104,6 +95,7 @@ $(document).ready(function () {
     // Add the buttons to the page
     $("#buttons-container").append($successfulUpdateButton, $unsuccessfulUpdateButton);
 });
+
 
 
 
