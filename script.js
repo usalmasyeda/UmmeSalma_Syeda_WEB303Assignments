@@ -3,47 +3,6 @@
 */
 $(document).ready(function () {
 
-     // Add buttons
-     let $successfulUpdateButton = $("<button>Successful Update</button>");
-     let $unsuccessfulUpdateButton = $("<button>Unsuccessful Update</button>");
- 
-     $successfulUpdateButton.click(function () {
-         // Attempt to update successfully
-         contentItems[0].updateContentItem(0, "New Name", "New Description", "New Category");
-         // Update the displayed content item
-         $contentItemList.empty(); // Clear the list
-         contentItems.forEach((item) => {
-             let $contentItem = $(item.toString());
-             $contentItem.css({
-                 border: "2px solid #333",
-                 width: "300px",
-                 padding: "10px",
-                 margin: "20px auto",
-             });
-             $contentItemList.append($contentItem);
-         });
-     });
- 
-     $unsuccessfulUpdateButton.click(function () {
-         // Attempt to update unsuccessfully
-         contentItems[0].updateContentItem(1, "New Name", "New Description", "New Category");
-         // Update the displayed content item
-         $contentItemList.empty(); // Clear the list
-         contentItems.forEach((item) => {
-             let $contentItem = $(item.toString());
-             $contentItem.css({
-                 border: "2px solid #333",
-                 width: "300px",
-                 padding: "10px",
-                 margin: "20px auto",
-             });
-             $contentItemList.append($contentItem);
-         });
-     });
- 
-     // Add the buttons to the page
-     $("#buttons-container").append($successfulUpdateButton, $unsuccessfulUpdateButton);
-
     // ContentItem class
     class ContentItem {
         constructor(IdNumber, name, description, category) {
@@ -96,6 +55,47 @@ $(document).ready(function () {
     });
 
     $("#theme-name").text("Famous Books");
+
+    // Add buttons
+    let $successfulUpdateButton = $("<button>Successful Update</button>");
+    let $unsuccessfulUpdateButton = $("<button>Unsuccessful Update</button>");
+
+    $successfulUpdateButton.click(function () {
+        // Attempt to update successfully
+        contentItems[0].updateContentItem(0, "New Name", "New Description", "New Category");
+        // Update the displayed content item
+        $contentItemList.empty(); // Clear the list
+        contentItems.forEach((item) => {
+            let $contentItem = $(item.toString());
+            $contentItem.css({
+                border: "2px solid #333",
+                width: "300px",
+                padding: "10px",
+                margin: "20px auto",
+            });
+            $contentItemList.append($contentItem);
+        });
+    });
+
+    $unsuccessfulUpdateButton.click(function () {
+        // Attempt to update unsuccessfully
+        contentItems[0].updateContentItem(1, "New Name", "New Description", "New Category");
+        // Update the displayed content item
+        $contentItemList.empty(); // Clear the list
+        contentItems.forEach((item) => {
+            let $contentItem = $(item.toString());
+            $contentItem.css({
+                border: "2px solid #333",
+                width: "300px",
+                padding: "10px",
+                margin: "20px auto",
+            });
+            $contentItemList.append($contentItem);
+        });
+    });
+
+    // Add the buttons to the page
+    $("#buttons-container").append($successfulUpdateButton, $unsuccessfulUpdateButton);
 });
 
 
