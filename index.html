@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/photoviewer.css">
+    <title>Photo Viewer</title>
+</head>
+<body>
+    <h1>Salma's Photo Gallery</h1>
+
+    <div id="photo-viewer">
+        <div class="photo-box is-loading">
+            <img id="displayed-image" src="img/photo1.jpg" alt="photo1">
+        </div>
+        <div class="photo-thumbnails" id="thumbnails">
+            <a href="img/photo1.jpg" class="thumbnail-anchor active" title="photo1">
+                <img src="img/photo1.jpg" alt="thumbnail1">
+            </a>
+
+            <a href="img/photo2.jpg" class="thumbnail-anchor" title="photo2">
+                <img src="img/photo2.jpg" alt="thumbnail2">
+            </a>
+
+            <a href="img/photo3.jpg" class="thumbnail-anchor" title="photo3">
+                <img src="img/photo3.jpg" alt="thumbnail3">
+            </a>
+
+            <a href="img/photo4.jpg" class="thumbnail-anchor" title="photo4">
+                <img src="img/photo4.jpg" alt="thumbnail4">
+            </a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <h2>Salma's Photo Gallery</h2>
+        <a id="close-modal" href="#">Close</a>
+        <img id="modal-image" src="" alt="Modal Image">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/photoviewer.js"></script>
+</body>
+</html>

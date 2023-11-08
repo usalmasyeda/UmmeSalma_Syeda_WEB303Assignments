@@ -1,0 +1,78 @@
+/* Photo Viewer Styles */
+#photo-viewer {
+  text-align: center;
+  margin: 20px;
+}
+
+.photo-box {
+  cursor: pointer;
+  max-width: 800px;
+  max-height: 450px;
+  width: 100%;
+}
+
+.photo-thumbnails {
+  display: flex;
+  justify-content: center;
+  float: right;
+  margin-right: 20%;
+}
+
+.thumbnail-anchor {
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Specify dimensions for thumbnails */
+.thumbnail-anchor img {
+  width: 80px;
+  height: 45px;
+}
+
+/* Style the active thumbnail with a border */
+.thumbnail-anchor.active {
+  border: 4px solid #0073e6; /* Border color for active thumbnail */
+}
+
+#displayed-image {
+  width: 100%;
+  height: 100%;
+  border: 5px solid #e2e600; /* Border color for main image */
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal h2 {
+  color: #fff;
+  padding: 10px;
+}
+
+.modal #close-modal {
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modal #modal-image {
+  border: 2px solid #0073e6; /* Border color for modal image */
+  width: 800px;
+  height: 450px;
+  display: block;
+}
