@@ -1,0 +1,58 @@
+[
+    {
+        "firstName": "Elizabeth",
+        "lastName": "Keen",
+        "gender": "Female",
+        "role": "FBI Profiler",
+        "age": 32
+    },
+      
+    {
+        "firstName": "Raymond",
+        "lastName": "Reddington",
+        "gender": "Male",
+        "role": "Master Criminal",
+        "age": 60
+    },
+      
+    {
+        "firstName": "Donald",
+        "lastName": "Ressler",
+        "gender": "Male",
+        "role": "FBI Agent",
+        "age": 35
+    },
+      
+    {
+        "firstName": "Aram",
+        "lastName": "Mojtabai",
+        "gender": "Male",
+        "role": "Tech Specialist",
+        "age": 30
+    },
+      
+    {
+        "firstName": "Samar",
+        "lastName": "Navabi",
+        "gender": "Female",
+        "role": "Mossad Agent",
+        "age": 33
+    },
+      
+    {
+        "firstName": "Dembe",
+        "lastName": "Zuma",
+        "gender": "Male",
+        "role": "Bodyguard",
+        "age": 45
+    },
+      
+    {
+        "firstName": "Tom",
+        "lastName": "Keen",
+        "gender": "Male",
+        "role": "Undercover Operative",
+        "age": 34
+    }
+         
+]
