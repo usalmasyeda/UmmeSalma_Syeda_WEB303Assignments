@@ -1,52 +1,35 @@
-.highlight {
-    background-color: rgb(100, 0, 40);
-    color: white;
-  }
-  .highlight td{
-    color:white;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: rgb(218, 239, 241);
-    color: #D1D1D1;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1 {
-    color: #9A79DE;
-  }
-  
-  label,
-  th,
-  td {
-    color: black;
-  }
-  
-  input,
-  button {
-    padding: 8px;
-    margin: 4px;
-    border: none;
-    background-color: rgb(85, 170, 140);
-    color: #FFFFFF;
-    cursor: pointer;
-  }
-  
-  input::placeholder {
-    color: #D1D1D1;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 80%;
-    margin: 20px auto;
-  }
-  
-  th,
-  td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #debb79;
-  }
+body {
+  background-color: rgb(81, 81, 81);
+  color: white;
+}
+h1 {
+  text-align: center;
+  font-style: italic;
+}
+table {
+  margin: 20px auto;
+  border: 2px solid whitesmoke;
+}
+input {
+  margin-left: 18px;
+  border: 3px solid rgb(153, 32, 218);
+  width: 20%;
+  padding: 5px;
+}
+td {
+  width: 5%;
+  font-size: 20px;
+}
+thead td {
+  font-weight: bold;
+}
+.highlighted {
+  background-color: rgb(163, 218, 187);
+  color: white;
+}
+table {
+  background-color: rgb(112, 216, 157);
+}
+button {
+  background-color: rgb(233, 255, 192);
+}
