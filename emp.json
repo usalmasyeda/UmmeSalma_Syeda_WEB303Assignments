@@ -1,0 +1,65 @@
+[
+    {
+        "firstName": "Elizabeth",
+        "lastName": "Keen",
+        "gender": "Female",
+        "role": "FBI Profiler",
+        "age": 32,
+        "birthdate": "1984-07-16"
+    },
+      
+    {
+        "firstName": "Raymond",
+        "lastName": "Reddington",
+        "gender": "Male",
+        "role": "Master Criminal",
+        "age": 60,
+        "birthdate": "1988-02-28"
+    },
+      
+    {
+        "firstName": "Donald",
+        "lastName": "Ressler",
+        "gender": "Male",
+        "role": "FBI Agent",
+        "age": 35,
+        "birthdate": "1980-04-10"                                                 
+    },
+      
+    {
+        "firstName": "Aram",
+        "lastName": "Mojtabai",
+        "gender": "Male",
+        "role": "Tech Specialist",
+        "age": 30,
+        "birthdate": "1990-04-12"
+    },
+      
+    {
+        "firstName": "Samar",
+        "lastName": "Navabi",
+        "gender": "Female",
+        "role": "Mossad Agent",
+        "age": 33,
+        "birthdate": "1982-12-21"
+    },
+      
+    {
+        "firstName": "Dembe",
+        "lastName": "Zuma",
+        "gender": "Male",
+        "role": "Bodyguard",
+        "age": 45,
+        "birthdate": "1987-03-01"
+    },
+      
+    {
+        "firstName": "Tom",
+        "lastName": "Keen",
+        "gender": "Male",
+        "role": "Undercover Operative",
+        "age": 34,
+        "birthdate": "1984-08-14"
+    }
+         
+]

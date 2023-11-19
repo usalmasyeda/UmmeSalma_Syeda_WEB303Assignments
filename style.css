@@ -1,30 +1,48 @@
 body {
-  font-size: 16px;
-  font-family: Helvetica, sans-serif;
-  margin: 0 auto;
-  max-width: 500px;
+    background-color: rgb(232, 226, 195);
 }
 
 h1 {
-	text-align: center;
+    text-align: center;
 }
 
-label {
-	display: block;
-	width: 300px;
-	text-align: right;
-	  margin: 10px auto;
+input {
+    margin-left: 10px;
+    border: 2px solid rgb(74, 102, 156);
+    width: 20%;
+    padding: 5px;
+
+}  
+
+table {
+    margin: 20px auto;
+    border: 2px solid rgb(74, 102, 156);
+    width: 80%;
 }
 
-input[type=text] {
-	width: 200px;
+thead th a {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(74, 102, 156);
+    cursor: pointer;
 }
 
-p {
-	text-align: center;
+/* Removed thead td code here */
+/* Removed Button code here */
+
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse; /* Taking out the double border */
 }
 
-span {
-	font-weight: bold;
-	color: red;
+a.ascending::after {
+    content: "\25B2";
+}
+
+a.descending::after {
+    content: "\25BC";
+}
+
+a.no-sort::after {
+    content: "";
 }
