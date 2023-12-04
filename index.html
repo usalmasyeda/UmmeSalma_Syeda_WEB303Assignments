@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Forms</title>
+</head>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>
+        Umme Salma Syeda
+    </h1>
+    <form id="registration" action="/register" method="POST">
+        <label for="username">Username:
+            <input type="text" name="username" id="username">
+        </label>
+
+        <label for="password">Password:
+            <input type="password" name="password" id="password">
+        </label>
+
+        <label for="confirmPassword">Confirm Password:
+            <input type="password" name="confirmPassword" id="confirmPassword">
+        </label>
+
+        <label for="terms">I accept the terms of service
+            <input type="checkbox" name="terms" id="terms">
+        </label>
+
+        <label for="country">Select your country:
+        <select id="country" name="country">
+            <option value="" disabled selected>Select your country</option>
+        </select>
+        </label>
+
+        <input type="submit" value="Submit" id="submit" />
+    </form>
+
+    <div id="welcomeMessage"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/countries.js"></script>
+</body>
+
+</html>
